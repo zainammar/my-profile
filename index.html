@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zain Ammar — Profile</title>
+  <style>
+    :root{
+      --primary: #004aad; /* title */
+      --accent:  #0073e6; /* section headings */
+      --muted:   #6b7280;
+      --bg:      #f7fbff;
+      --card:    #ffffff;
+      --maxw:    980px;
+      --glass:   rgba(0,0,0,0.04);
+      --gap:     18px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #0b1220;
+    }
+
+    .im{
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+     
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#ffffff);padding:28px;display:flex;justify-content:center}
+    .wrap{width:100%;max-width:var(--maxw)}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 22px rgba(11,17,32,0.06);overflow:hidden}
+    header{display:flex;align-items:center;gap:18px;padding:22px 24px;border-bottom:1px solid var(--glass)}
+    .avatar{width:84px;height:84px;border-radius:10px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    .title h1{margin:0;font-size:20px;color:var(--primary)}
+    .title p{margin:6px 0 0;font-size:13px;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:320px 1fr;gap:var(--gap)}
+    .left{padding:20px;border-right:1px solid var(--glass);min-height:420px}
+    .right{padding:20px}
+
+    .section{margin-bottom:18px}
+    h2.section-title{margin:0 0 12px;font-size:15px;color:var(--accent)}
+    .contact p{margin:6px 0;color:var(--muted);font-size:14px}
+    .links a{display:inline-block;margin-right:10px;text-decoration:none;color:var(--primary);font-weight:600}
+
+    .chip{display:inline-block;padding:8px 10px;border-radius:999px;background:var(--glass);font-size:13px;margin:6px 6px 6px 0}
+    .skill-list{display:flex;flex-wrap:wrap}
+
+    .timeline-item{margin-bottom:14px;padding-bottom:8px;border-bottom:1px dashed #eef3ff}
+    .timeline-item strong{display:block;color:#0b1220}
+    .timeline-item .meta{font-size:13px;color:var(--muted);margin-top:6px}
+
+    .certs li{margin-bottom:8px}
+
+    footer{padding:16px 20px;border-top:1px solid var(--glass);display:flex;justify-content:space-between;align-items:center}
+    .btn{background:var(--primary);color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block}
+    .btn.secondary{background:transparent;color:var(--primary);border:1px solid var(--primary)}
+
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr}
+      .left{border-right:none;border-bottom:1px solid var(--glass)}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap card" role="document">
+    <header>
+      <div class="im"><img src="images/me4.png" style="width:100px;height: auto;" ></div>
+      <br>
+      <div class="title">
+        <h1>Zain Ammar</h1>
+        <p>Graphic Designer | Web Designer & Developer | Media Management</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <aside class="left">
+        <section class="section contact">
+          <h2 class="section-title">Contact</h2>
+          <p>Paposh Nagar, Nazimabad Block 5-A</p>
+          <p>Cell: <a href="tel:+923447092215">0344-7092215</a></p>
+          <p>Email: <a href="mailto:zainammar74@gmail.com">zainammar74@gmail.com</a></p>
+          <div style="margin-top:10px" class="links">
+            <a href="https://github.com/zainammar" target="_blank">GitHub</a>
+            <a href="https://codepen.io/zainammar-01" target="_blank">CodePen</a>
+            <a href="https://www.behance.net/sirzain/projects" target="_blank">Behance</a>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Skills</h2>
+          <div class="skill-list">
+            <div class="chip">HTML</div>
+            <div class="chip">CSS / Grid</div>
+            <div class="chip">Bootstrap</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">React</div>
+            <div class="chip">Python (Django)</div>
+            <!-- <div class="chip">Odoo</div> -->
+            <div class="chip">PHP (Basic)</div>
+            <div class="chip">WordPress</div>
+            <div class="chip">Photoshop</div>
+            <div class="chip">Illustrator</div>
+            <div class="chip">InDesign</div>
+            <div class="chip">CorelDRAW</div>
+            <div class="chip">InPage</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Certificates</h2>
+          <h2 class="section-title">ARENA APTECH INTERNAIONL </h2>
+          <ul class="certs">
+            <li>Animation Design & Visualization — 30/35</li>
+            <li>Adobe InDesign — 50/60</li>
+            <li>Typography & Printing — 50/60</li>
+            <li>Media Publishing</li>
+            <li>QuarkXPress & CAD — 50/60</li>
+            <li>ARENA APTECH INTERNATIONAL</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="right">
+        <section class="section">
+          <h2 class="section-title">Professional Timeline</h2>
+
+          
+
+          <div class="timeline-item">
+            <strong>ALNAFI Educational Benefits</strong>
+            <div class="meta">Web Developer & Media Manager — 2019-Present</div>
+          </div>
+       
+          <div class="timeline-item">
+            <strong>Voice of City Newspaper</strong>
+            <div class="meta">Web Developer & Online News Dept. Head — 2018-2019</div>
+          </div>
+          <div class="timeline-item">
+            <strong>Arena IIC</strong>
+            <div class="meta">Trainer — Web Development & Graphic Tools — 2018 — 20206</div>
+          </div>
+          <div class="timeline-item">
+            <strong>Block Buster Media Advertising</strong>
+            <div class="meta">Graphic Designer & Web Developer 2018 — 2020</div>
+          </div>
+          <div class="timeline-item">
+            <strong>Iqbal Educational Books (Iqbal Book Depot)</strong>
+            <div class="meta">Graphic Designer — Book Designing — 2016-2018</div>
+          </div>
+
+          <div class="timeline-item">
+            <strong>Al Karam Towels</strong>
+            <div class="meta">Recruitment Officer – HR & Compliance — 2014-2016</div>
+          </div>
+
+         
+
+          <div class="timeline-item">
+            <strong>Al-Hamid Engineering Services / Grand Wood Furniture</strong>
+            <div class="meta">Media & Marketing Manager — 2013-2014</div>
+          </div>
+
+          <div class="timeline-item">
+            <strong>Institute of Risk Management</strong>
+            <div class="meta">Graphic Designer, Web Developer & Course Coordinator — 2006-2011</div>
+          </div>
+
+          <div class="timeline-item">
+            <strong>Haroon Art Studio</strong>
+            <div class="meta">Graphic Designer — Printing Department — 1996-2006</div>
+          </div>
+
+          <div class="timeline-item">
+            <strong>Bright Scope College & Institute</strong>
+            <div class="meta">Trainer (CIT & DIT) — Evening 4pm-8pm</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Summary</h2>
+          <p style="color:var(--muted);line-height:1.5">Experienced Graphic Designer and Web Developer with a strong background in media management, training, and project coordination. Skilled in modern front-end technologies and well-versed in Adobe creative tools. Comfortable leading small teams, delivering branding and digital marketing projects, and producing print-ready designs.</p>
+        </section>
+
+      </main>
+    </div>
+
+    <footer>
+      <div>
+        <a class="btn" href="sandbox:/mnt/data/Zain_Profile_Colored.pdf" target="_blank">Download PDF</a>
+        <a class="btn secondary" id="printBtn">Print</a>
+      </div>
+      <div style="color:var(--muted);font-size:13px">Last updated: Dec 1, 2025</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('printBtn').addEventListener('click', function(){
+      window.print();
+    });
+  </script>
+</body>
+</html>
